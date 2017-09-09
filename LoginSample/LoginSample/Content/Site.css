@@ -1,24 +1,54 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
     padding-left: 15px;
     padding-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+        /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+        background: url(/Content/Image/background-photo-mobile-devices.jpg);
+    }
+}
+
+.login {
+    background: url(/Content/Image/background-photo.jpg);
+
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color: #464646;
+    /*background-photo-mobile-devices*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.center {
+    margin: 0 auto;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.loginDiv {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 15px 15px 5px 15px;
+    color: azure;
 }
